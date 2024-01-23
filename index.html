@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="flex max-w-[90%] m-auto mt-5 justify-between" id="main_page">
+      <section class="main-text max-w-[45%]">
+        <h1 class="text-5xl my-7 font-bold">Stay updated!</h1>
+
+        <p class="text-xl mb-7">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+
+        <div class="flex mb-5 gap-3 items-center">
+          <img
+            class="myImage"
+            src="assets/images/mySvgFile.svg"
+            height="35"
+            width="30"
+            alt="tick"
+          />
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="flex mb-5 gap-3">
+          <img
+            class="myImage"
+            src="assets/images/mySvgFile.svg"
+            height="35"
+            width="30"
+            alt="tick"
+          />
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="flex mb-5 gap-3">
+          <img
+            class="myImage"
+            src="assets/images/mySvgFile.svg"
+            height="35"
+            width="30"
+            alt="tick"
+          />
+          <p>And much more!</p>
+        </div>
+
+        <form id="emailForm">
+          <label for="emailInput">Email address</label>
+          <input
+            type="email"
+            id="emailInput"
+            class="block max-w-[100%] w-[90%] pl-4 mt-2 py-2 border-2 border-slate-400"
+            placeholder="email@company.com"
+          />
+        </form>
+        <p id="resultMessage"></p>
+
+        <button
+          class="main-button max-w-[100%] w-[90%] mt-5 py-3 bg-black text-white rounded-lg"
+        >
+          Subscribe to monthly newsletter
+        </button>
+      </section>
+
+      <section>
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="img" />
+      </section>
+    </div>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <section
+      class="popup text-left w-[50%] m-auto border-2 rounded-3xl p-12 mt-16 bg-slate-200 hidden"
+      id="popup_page"
+    >
+      <img src="assets/images/icon-success.svg" alt="success" />
+      <h1 class="text-5xl py-7 font-bold">Thanks for subscribing!</h1>
+      <p class="popup-email">
+        A confirmation email has been sent to
+        <strong>ash@loremcompany.com.</strong> Please open it and click the
+        button inside to confirm your subscription.
+      </p>
+      <button
+        class="popup-button max-w-[90%] w-[90%] py-3 mt-5 bg-black text-white rounded-lg m-auto"
+      >
+        Dismiss message
+      </button>
+    </section>
+
+    <!-- Success message end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Arvind</a>.
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
